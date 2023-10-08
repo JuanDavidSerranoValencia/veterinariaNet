@@ -67,7 +67,7 @@ dotnet add package CsvHelper --version 30.0.1
 # Conexion Base de datos
 ```
  "ConnectionStrings": {
-    "MySqlConex":"server=localhost;user=root;password=123456;database=petShop"
+    "MySqlConex":"server=localhost;user=xxx;password=xxx;database=petShop"
   }
   }
 ```
