@@ -14,8 +14,6 @@ dotnet new classlib -o Core
 dotnet new classlib -o Infrastructure
 ```
 
-
-
 ## Creacion Proyecto WebApi
 
 ```
@@ -66,7 +64,13 @@ dotnet add package CsvHelper --version 30.0.1
 ```
 ![image](https://drive.google.com/uc?export=view&id=1pst95gYdKZcRnal7iGLq47HFKBkr4lsm)
 
-
+# Conexion Base de datos
+```
+ "ConnectionStrings": {
+    "MySqlConex":"server=localhost;user=xxx;password=xxx;database=petShop"
+  }
+  }
+```
 # Carpetas Infrastructure 
 ```
  -Data
