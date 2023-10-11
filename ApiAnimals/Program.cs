@@ -12,10 +12,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<VeterinariaNetContext>(options =>{
+builder.Services.AddDbContext<VeterinariaNetContext>(options=>{
 
     string connectionString= builder.Configuration.GetConnectionString("MySqlConex");
-    
+    options.UseMySql(connectionString , ServerVersion.AutoDetect(connectionString));
+
 });
 
 var app = builder.Build();
