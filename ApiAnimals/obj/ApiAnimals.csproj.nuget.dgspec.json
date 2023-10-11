@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Documents\\veterinariaNet\\ApiAnimals\\ApiAnimals.csproj": {}
+    "C:\\Users\\Yii\\Documents\\veterinariaNet\\ApiAnimals\\ApiAnimals.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Documents\\veterinariaNet\\ApiAnimals\\ApiAnimals.csproj": {
+    "C:\\Users\\Yii\\Documents\\veterinariaNet\\ApiAnimals\\ApiAnimals.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Documents\\veterinariaNet\\ApiAnimals\\ApiAnimals.csproj",
+        "projectUniqueName": "C:\\Users\\Yii\\Documents\\veterinariaNet\\ApiAnimals\\ApiAnimals.csproj",
         "projectName": "ApiAnimals",
-        "projectPath": "C:\\Users\\PC\\Documents\\veterinariaNet\\ApiAnimals\\ApiAnimals.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Documents\\veterinariaNet\\ApiAnimals\\obj\\",
+        "projectPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\ApiAnimals\\ApiAnimals.csproj",
+        "packagesPath": "C:\\Users\\Yii\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\ApiAnimals\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Yii\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\PC\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\PC\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\Yii\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -104,17 +104,17 @@
         }
       }
     },
-    "C:\\Users\\PC\\Documents\\veterinariaNet\\Core\\Core.csproj": {
+    "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Documents\\veterinariaNet\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\PC\\Documents\\veterinariaNet\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Documents\\veterinariaNet\\Core\\obj\\",
+        "projectPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Yii\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Yii\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -157,17 +157,17 @@
         }
       }
     },
-    "C:\\Users\\PC\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\Yii\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\PC\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Documents\\veterinariaNet\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Yii\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Yii\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -179,8 +179,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\PC\\Documents\\veterinariaNet\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\PC\\Documents\\veterinariaNet\\Core\\Core.csproj"
+              "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\Core.csproj"
               }
             }
           }

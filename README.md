@@ -69,7 +69,7 @@ dotnet add package CsvHelper --version 30.0.1
  "ConnectionStrings": {
     "MySqlConex":"server=localhost;user=xxx;password=xxx;database=petShop"
   }
-  }
+  
 ```
 # Carpetas Infrastructure 
 ```

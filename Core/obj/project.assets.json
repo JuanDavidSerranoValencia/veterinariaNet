@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {}
+    "C:\\Users\\Yii\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Documents\\veterinariaNet\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\PC\\Documents\\veterinariaNet\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Documents\\veterinariaNet\\Core\\obj\\",
+      "projectPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\Yii\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Yii\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
