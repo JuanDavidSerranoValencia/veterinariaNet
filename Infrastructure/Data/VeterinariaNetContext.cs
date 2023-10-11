@@ -15,6 +15,18 @@ public class VeterinariaNetContext : DbContext
     public VeterinariaNetContext(DbContextOptions options) : base(options)
     {
     }
+    
+    public DbSet<Cliente> Clientes {get;set;}
+    public DbSet<Cita> Citas {get;set;}
+    public DbSet<Departamento> Departamentos {get;set;}
+    public DbSet<Ciudad> Ciudades {get;set;}
+    public DbSet<ClienteDireccion> ClientesDirecciones {get;set;}
+    public DbSet<ClienteTelefono> ClientesTelefonos {get;set;}
+    public DbSet<Mascota> Mascotas {get;set;}
+    public DbSet<Pais> Paises {get;set;}
+    public DbSet<Raza> Razas {get;set;}
+    public DbSet<Servicio> Servicios {get;set;}
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -22,5 +34,6 @@ public class VeterinariaNetContext : DbContext
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
 
+    
 
 }
