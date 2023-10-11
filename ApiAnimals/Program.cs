@@ -12,6 +12,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<VeterinariaNetContext>(options =>{
+
+    string connectionString= builder.Configuration.GetConnectionString("MySqlConex");
+    
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
