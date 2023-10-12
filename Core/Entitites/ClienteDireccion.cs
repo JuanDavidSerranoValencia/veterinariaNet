@@ -24,7 +24,7 @@ public class ClienteDireccion : BaseEntity
     public string CodigoPostal { get; set; }
     [Required]
     public int IdCiudad { get; set; }
-    public Ciudad Ciudade { get; set; }
+    public Ciudad Ciudades { get; set; }
     [Required]
     public int IdCliente { get; set; }
     public Cliente Cliente{ get; set; }

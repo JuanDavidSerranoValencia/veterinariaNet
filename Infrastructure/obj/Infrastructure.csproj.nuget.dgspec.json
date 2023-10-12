@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yii\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\APM02-55\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\Core.csproj": {
+    "C:\\Users\\APM02-55\\Documents\\veterinariaNet\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\APM02-55\\Documents\\veterinariaNet\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Yii\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\obj\\",
+        "projectPath": "C:\\Users\\APM02-55\\Documents\\veterinariaNet\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\APM02-55\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APM02-55\\Documents\\veterinariaNet\\Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Yii\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APM02-55\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,34 +59,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yii\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\APM02-55\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\APM02-55\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Yii\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\APM02-55\\Documents\\veterinariaNet\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\APM02-55\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APM02-55\\Documents\\veterinariaNet\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Yii\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APM02-55\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\Core\\Core.csproj"
+              "C:\\Users\\APM02-55\\Documents\\veterinariaNet\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\APM02-55\\Documents\\veterinariaNet\\Core\\Core.csproj"
               }
             }
           }
@@ -124,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

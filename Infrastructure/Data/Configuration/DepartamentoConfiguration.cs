@@ -22,6 +22,10 @@ public class DepartamentoConfiguration : IEntityTypeConfiguration<Departamento>
         .IsRequired()
         .HasMaxLength(50);
 
+        builder.HasOne(d => d.Paises)
+        .WithMany(d => d.Departamentos)
+        .HasForeignKey(d => d.IdPais);
+
      
     }
 }

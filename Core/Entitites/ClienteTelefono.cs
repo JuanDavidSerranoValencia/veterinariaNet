@@ -9,7 +9,9 @@ namespace Core.Entitites;
 public class ClienteTelefono : BaseEntity
 {
     [Required]
-    public int idCliente { get; set; }
+    public int IdCliente { get; set; }
+    public Cliente Clientes {get;set;}
+    
     public string Numero { get; set; }
 
 }
