@@ -13,7 +13,7 @@ namespace Infrastructure.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<Servicio> builder)
         {
-            builder.ToTable("Servicio");
+            builder.ToTable("servicio");
 
             builder.HasKey(s => s.Id);
             builder.Property(s => s.Id);
