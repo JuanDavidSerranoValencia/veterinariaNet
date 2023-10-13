@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wwItWlq8AP1BIAWPOqBJN5/ruIyxcXcJE/HFySSsye2qC0mW5K2aXIjNK3n8uxaEIYqdZdGv533y4oooSaS3Kw==",
+  "dgSpecHash": "kRKkXpX5NqHoMaDbsCER4yCtnwricQofbeT9JLBZPmD2WCIZ+pv/BYS5shK7Wxiw8MfjRc+vdrPCiR4PBW7nZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yii\\Documents\\veterinariaNet\\ApiAnimals\\ApiAnimals.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Yii\\.nuget\\packages\\aspnetcoreratelimit\\5.0.0\\aspnetcoreratelimit.5.0.0.nupkg.sha512",
     "C:\\Users\\Yii\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Yii\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Yii\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
@@ -41,6 +42,7 @@
     "C:\\Users\\Yii\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\Yii\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Yii\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
+    "C:\\Users\\Yii\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\Yii\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "C:\\Users\\Yii\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
     "C:\\Users\\Yii\\.nuget\\packages\\serilog.aspnetcore\\7.0.0\\serilog.aspnetcore.7.0.0.nupkg.sha512",

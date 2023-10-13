@@ -62,6 +62,12 @@ dotnet add package Microsoft.EntityFrameworkCore --version 7.0.10
 dotnet add package CsvHelper --version 30.0.1
 
 ```
+## Paquete Para el control de peticiones //Va en el API
+
+```
+dotnet add package AspNetCoreRateLimit --version 5.0.0
+
+```
 ![image](https://drive.google.com/uc?export=view&id=1pst95gYdKZcRnal7iGLq47HFKBkr4lsm)
 
 # Conexion Base de datos
