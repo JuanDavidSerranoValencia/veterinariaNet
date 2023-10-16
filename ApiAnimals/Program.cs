@@ -1,5 +1,6 @@
 using System.Reflection;
 using ApiAnimals.Extensions;
+using AspNetCoreRateLimit;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -34,7 +35,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
+app.UseCors("CorsPolicy");
+
 app.UseHttpsRedirection();
+
+app.UseIpRateLimiting();
+
 
 app.UseAuthorization();
 
