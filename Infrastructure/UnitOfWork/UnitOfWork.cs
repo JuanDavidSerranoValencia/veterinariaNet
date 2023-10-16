@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Core.Interfaces;
 using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.UnitOfWork;
 public class UnitOfWork : IUnitOfWork, IDisposable
@@ -13,13 +14,15 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     {
         _context = context;
     }
-    public void Dispose()
+   
+    public async Task<int> SaveAsync()
     {
-        throw new NotImplementedException();
+        return await _context.SaveChangesAsync();
     }
 
-    public Task<int> SaveAsync()
+     public void Dispose()
     {
-        throw new NotImplementedException();
+        _context.Dispose();
     }
+ 
 }
