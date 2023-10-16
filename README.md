@@ -94,6 +94,7 @@ dotnet add package AspNetCoreRateLimit --version 5.0.0
  -Extensions
  -Profiles
  -Dtos
+ -Helpers
 ```
 # Repositorio generico, Unidad de trabajo
 

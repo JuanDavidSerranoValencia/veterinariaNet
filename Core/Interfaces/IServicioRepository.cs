@@ -6,7 +6,7 @@ using Core.Entitites;
 
 namespace Core.Interfaces
 {
-    public interface IServicioRepository:IGenericRepository<Raza>
+    public interface IServicioRepository:IGenericRepository<Servicio>
     {
         
     }
