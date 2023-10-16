@@ -5,8 +5,8 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Core.Entitites;
 
-namespace Core.Interfaces
-{
+namespace Core.Interfaces;
+
     public interface IGenericRepository<T> where T : BaseEntity
     {
         Task<T> GetByIdAsync(int id);
@@ -19,4 +19,3 @@ namespace Core.Interfaces
         void RemoveRange(IEnumerable<T> entities);
         void Update(T entity);
     }
-}
