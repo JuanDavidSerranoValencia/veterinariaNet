@@ -12,6 +12,9 @@ public class UnitOfWork : IUnitOfWork, IDisposable
 {
     private readonly VeterinariaNetContext _context;
     private PaisRepository _paises;
+    private CitaRepository _citas;
+
+    private CiudadRepository _ciudades;
 
     public IPaisRepository Paises
     {
@@ -22,6 +25,30 @@ public class UnitOfWork : IUnitOfWork, IDisposable
                 _paises = new PaisRepository(_context);
             }
             return _paises;
+        }
+    }
+
+    public ICitaRepository Citas
+    {
+        get
+        {
+            if (_citas == null)
+            {
+                _citas = new CitaRepository(_context);
+            }
+            return _citas;
+        }
+    }
+
+    public ICiudadRepository Ciudades
+    {
+        get
+        {
+            if (_ciudades == null)
+            {
+                _ciudades = new CiudadRepository(_context);
+            }
+            return _ciudades;
         }
     }
     public UnitOfWork(VeterinariaNetContext context)

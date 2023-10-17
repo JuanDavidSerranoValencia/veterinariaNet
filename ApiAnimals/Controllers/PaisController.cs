@@ -13,15 +13,15 @@ namespace ApiAnimals.Controllers;
 public class PaisController : BaseControllerApi
 {
     private readonly IUnitOfWork _unitOfWork;
-    private readonly Mapper _mapper;
+    private readonly IMapper _mapper;
 
-    public PaisController(IUnitOfWork unitOfWork,Mapper mapper)
+    public PaisController(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
     }
 
-     [HttpGet]
+    [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<IEnumerable<PaisDto>>> Get()
@@ -54,7 +54,8 @@ public class PaisController : BaseControllerApi
     public async Task<ActionResult<PaisDto>> Get(int id)
     {
         var pais = await _unitOfWork.Paises.GetByIdAsync(id);
-        if (pais == null){
+        if (pais == null)
+        {
             return NotFound();
         }
         return _mapper.Map<PaisDto>(pais);
