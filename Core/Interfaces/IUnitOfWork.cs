@@ -7,6 +7,7 @@ namespace Core.Interfaces
 {
     public interface IUnitOfWork
     {
+        IClienteRepository Clientes { get; }
         IPaisRepository Paises { get; }
         ICitaRepository Citas { get; }
         ICiudadRepository Ciudades { get; }

@@ -11,10 +11,21 @@ namespace Infrastructure.UnitOfWork;
 public class UnitOfWork : IUnitOfWork, IDisposable
 {
     private readonly VeterinariaNetContext _context;
+    private ClienteRepository _clientes;
     private PaisRepository _paises;
     private CitaRepository _citas;
-
     private CiudadRepository _ciudades;
+    public IClienteRepository Clientes
+    {
+        get
+        {
+            if (_clientes == null)
+            {
+                _clientes = new ClienteRepository(_context);
+            }
+            return _clientes;
+        }
+    }
 
     public IPaisRepository Paises
     {
