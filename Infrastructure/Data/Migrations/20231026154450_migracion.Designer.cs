@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Infrastructure.Data.Migracion
+namespace Infrastructure.Data.Migrations
 {
     [DbContext(typeof(VeterinariaNetContext))]
-    [Migration("20231012224215_migracionPrueba")]
-    partial class migracionPrueba
+    [Migration("20231026154450_migracion")]
+    partial class migracion
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

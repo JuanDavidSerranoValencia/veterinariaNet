@@ -16,5 +16,10 @@ namespace Infrastructure.Repositories
         {
             _context = context;
         }
+
+        public static implicit operator ClienteRepository(ClienteTelefonoRepository v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

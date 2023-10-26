@@ -10,8 +10,10 @@ namespace Infrastructure.Repositories
 {
     public class ClienteDireccionRepository : GenericRepository<ClienteDireccion>, IClienteDireccionRepository
     {
+        private readonly VeterinariaNetContext _context;
         public ClienteDireccionRepository(VeterinariaNetContext context) : base(context)
         {
+            _context = context;
         }
     }
 }

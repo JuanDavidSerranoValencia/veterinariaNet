@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Infrastructure.Data.Migracion
+namespace Infrastructure.Data.Migrations
 {
     [DbContext(typeof(VeterinariaNetContext))]
     partial class VeterinariaNetContextModelSnapshot : ModelSnapshot

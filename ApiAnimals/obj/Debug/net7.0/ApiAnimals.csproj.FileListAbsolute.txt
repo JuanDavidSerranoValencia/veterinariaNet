@@ -201,3 +201,5 @@ C:\Users\APM02-55\Documents\veterinariaNet\ApiAnimals\obj\Debug\net7.0\ApiAnimal
 C:\Users\APM02-55\Documents\veterinariaNet\ApiAnimals\obj\Debug\net7.0\ref\ApiAnimals.dll
 C:\Users\Yii\Documents\veterinariaNet\ApiAnimals\bin\Debug\net7.0\AspNetCoreRateLimit.dll
 C:\Users\Yii\Documents\veterinariaNet\ApiAnimals\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\APM02-55\Documents\veterinariaNet\ApiAnimals\bin\Debug\net7.0\AspNetCoreRateLimit.dll
+C:\Users\APM02-55\Documents\veterinariaNet\ApiAnimals\bin\Debug\net7.0\Newtonsoft.Json.dll

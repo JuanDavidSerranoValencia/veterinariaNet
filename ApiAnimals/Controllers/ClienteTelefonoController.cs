@@ -7,15 +7,16 @@ using AutoMapper;
 using Core.Entitites;
 using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Routing;
 
 namespace ApiAnimals.Controllers
 {
-    public class CiudadController : BaseControllerApi
+    public class ClienteTelefonoController : BaseControllerApi
     {
+
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-
-        public CiudadController(IUnitOfWork unitOfWork, IMapper mapper)
+        public ClienteTelefonoController(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
@@ -24,54 +25,54 @@ namespace ApiAnimals.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<IEnumerable<CiudadDto>>> Get()
+        public async Task<ActionResult<IEnumerable<ClienteTelefonoDto>>> Get()
         {
-            var ciudad = await _unitOfWork.Ciudades.GetAllAsync();
+            var clienteTel = await _unitOfWork.ClienteTelefonos.GetAllAsync();
 
-            //var ciudad = await _unitOfWork.Ciudades.GetAllAsync();
-            return _mapper.Map<List<CiudadDto>>(ciudad);
+            //var clienteTel = await _unitOfWork.ClienteTelefonos.GetAllAsync();
+            return _mapper.Map<List<ClienteTelefonoDto>>(clienteTel);
         }
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<Ciudad>> Post(CiudadDto ciudadDto)
+        public async Task<ActionResult<ClienteTelefono>> Post(ClienteTelefonoDto clienteTelefonoDto)
         {
-            var ciudad = _mapper.Map<Ciudad>(ciudadDto);
-            this._unitOfWork.Ciudades.Add(ciudad);
+            var clienteTel = _mapper.Map<ClienteTelefono>(clienteTelefonoDto);
+            this._unitOfWork.ClienteTelefonos.Add(clienteTel);
             await _unitOfWork.SaveAsync();
-            if (ciudad == null)
+            if (clienteTel == null)
             {
                 return BadRequest();
             }
-            ciudadDto.Id = ciudad.Id;
-            return CreatedAtAction(nameof(Post), new { id = ciudadDto.Id }, ciudadDto);
+            clienteTelefonoDto.Id = clienteTel.Id;
+            return CreatedAtAction(nameof(Post), new { id = clienteTelefonoDto.Id }, clienteTelefonoDto);
         }
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<CiudadDto>> Get(int id)
+        public async Task<ActionResult<ClienteTelefonoDto>> Get(int id)
         {
-            var ciudad = await _unitOfWork.Ciudades.GetByIdAsync(id);
-            if (ciudad == null)
+            var clienteTel = await _unitOfWork.ClienteTelefonos.GetByIdAsync(id);
+            if (clienteTel == null)
             {
                 return NotFound();
             }
-            return _mapper.Map<CiudadDto>(ciudad);
+            return _mapper.Map<ClienteTelefonoDto>(clienteTel);
         }
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<CiudadDto>> Put(int id, [FromBody] CiudadDto ciudadDto)
+        public async Task<ActionResult<ClienteTelefonoDto>> Put(int id, [FromBody] ClienteTelefonoDto clienteTelefonoDto)
         {
-            if (ciudadDto == null)
+            if (clienteTelefonoDto == null)
                 return NotFound();
-            var ciudad = _mapper.Map<Ciudad>(ciudadDto);
-            _unitOfWork.Ciudades.Update(ciudad);
+            var clienteTel = _mapper.Map<ClienteTelefono>(clienteTelefonoDto);
+            _unitOfWork.ClienteTelefonos.Update(clienteTel);
             await _unitOfWork.SaveAsync();
-            return ciudadDto;
+            return clienteTelefonoDto;
         }
 
         [HttpDelete("{id}")]
@@ -79,12 +80,12 @@ namespace ApiAnimals.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Delete(int id)
         {
-            var ciudad = await _unitOfWork.Ciudades.GetByIdAsync(id);
-            if (ciudad == null)
+            var clienteTel = await _unitOfWork.ClienteTelefonos.GetByIdAsync(id);
+            if (clienteTel == null)
             {
                 return NotFound();
             }
-            _unitOfWork.Ciudades.Remove(ciudad);
+            _unitOfWork.ClienteTelefonos.Remove(clienteTel);
             await _unitOfWork.SaveAsync();
             return NoContent();
         }

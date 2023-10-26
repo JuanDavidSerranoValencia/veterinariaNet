@@ -11,6 +11,12 @@ namespace Core.Interfaces
         IPaisRepository Paises { get; }
         ICitaRepository Citas { get; }
         ICiudadRepository Ciudades { get; }
+        IClienteDireccionRepository ClienteDirecciones { get; }
+        IClienteTelefonoRepository ClienteTelefonos { get; }
+        IDepartamentoRepository Departamentos { get; }
+        IMascotaRepository Mascotas { get; }
+        IRazaRepository Razas { get; }
+        IServicioRepository Servicios { get; }
         Task<int> SaveAsync();
     }
 }

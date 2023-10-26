@@ -10,12 +10,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ApiAnimals.Controllers
 {
-    public class CiudadController : BaseControllerApi
+    public class RazaController : BaseControllerApi
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public CiudadController(IUnitOfWork unitOfWork, IMapper mapper)
+        public RazaController(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
@@ -24,54 +24,54 @@ namespace ApiAnimals.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<IEnumerable<CiudadDto>>> Get()
+        public async Task<ActionResult<IEnumerable<RazaDto>>> Get()
         {
-            var ciudad = await _unitOfWork.Ciudades.GetAllAsync();
+            var raza = await _unitOfWork.Razas.GetAllAsync();
 
-            //var ciudad = await _unitOfWork.Ciudades.GetAllAsync();
-            return _mapper.Map<List<CiudadDto>>(ciudad);
+            //var raza = await _unitOfWork.Razas.GetAllAsync();
+            return _mapper.Map<List<RazaDto>>(raza);
         }
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<Ciudad>> Post(CiudadDto ciudadDto)
+        public async Task<ActionResult<Raza>> Post(RazaDto razaDto)
         {
-            var ciudad = _mapper.Map<Ciudad>(ciudadDto);
-            this._unitOfWork.Ciudades.Add(ciudad);
+            var pais = _mapper.Map<Raza>(razaDto);
+            this._unitOfWork.Razas.Add(pais);
             await _unitOfWork.SaveAsync();
-            if (ciudad == null)
+            if (pais == null)
             {
                 return BadRequest();
             }
-            ciudadDto.Id = ciudad.Id;
-            return CreatedAtAction(nameof(Post), new { id = ciudadDto.Id }, ciudadDto);
+            razaDto.Id = pais.Id;
+            return CreatedAtAction(nameof(Post), new { id = razaDto.Id }, razaDto);
         }
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<CiudadDto>> Get(int id)
+        public async Task<ActionResult<RazaDto>> Get(int id)
         {
-            var ciudad = await _unitOfWork.Ciudades.GetByIdAsync(id);
-            if (ciudad == null)
+            var pais = await _unitOfWork.Razas.GetByIdAsync(id);
+            if (pais == null)
             {
                 return NotFound();
             }
-            return _mapper.Map<CiudadDto>(ciudad);
+            return _mapper.Map<RazaDto>(pais);
         }
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<CiudadDto>> Put(int id, [FromBody] CiudadDto ciudadDto)
+        public async Task<ActionResult<RazaDto>> Put(int id, [FromBody] RazaDto razaDto)
         {
-            if (ciudadDto == null)
+            if (razaDto == null)
                 return NotFound();
-            var ciudad = _mapper.Map<Ciudad>(ciudadDto);
-            _unitOfWork.Ciudades.Update(ciudad);
+            var raza = _mapper.Map<Raza>(razaDto);
+            _unitOfWork.Razas.Update(raza);
             await _unitOfWork.SaveAsync();
-            return ciudadDto;
+            return razaDto;
         }
 
         [HttpDelete("{id}")]
@@ -79,15 +79,14 @@ namespace ApiAnimals.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Delete(int id)
         {
-            var ciudad = await _unitOfWork.Ciudades.GetByIdAsync(id);
-            if (ciudad == null)
+            var pais = await _unitOfWork.Razas.GetByIdAsync(id);
+            if (pais == null)
             {
                 return NotFound();
             }
-            _unitOfWork.Ciudades.Remove(ciudad);
+            _unitOfWork.Razas.Remove(pais);
             await _unitOfWork.SaveAsync();
             return NoContent();
         }
-
     }
 }
